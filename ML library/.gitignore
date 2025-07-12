@@ -1,0 +1,163 @@
+# Compiled Object files
+*.o
+*.obj
+*.lo
+*.slo
+
+# Executables
+*.exe
+*.out
+*.app
+test_*
+!test_*.cpp
+!test_*.hpp
+
+# Libraries
+*.lib
+*.a
+*.la
+*.so
+*.so.*
+*.dylib
+
+# CMake
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+*.cmake
+!CMakeLists.txt
+
+# Build directories
+build/
+Build/
+debug/
+Debug/
+release/
+Release/
+bin/
+obj/
+
+# IDE files
+.vscode/
+.vs/
+*.vcxproj*
+*.sln
+*.suo
+*.user
+*.userosscache
+*.sdf
+*.opensdf
+*.vcproj
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user
+
+# Code::Blocks
+*.cbp
+*.layout
+*.depend
+
+# CLion
+.idea/
+cmake-build-*/
+
+# Qt Creator
+*.pro.user*
+*.creator.user*
+
+# Xcode
+*.xcodeproj/
+*.xcworkspace/
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+xcuserdata/
+DerivedData/
+
+# Core dumps
+core
+core.*
+*.core
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Logs
+*.log
+
+# Performance test results
+*.prof
+*.perf
+
+# Documentation generated files
+docs/html/
+docs/latex/
+*.doxygen
+
+# Backup files
+*_backup.*
+*_old.*
+*.orig
+
+# Python cache (if using Python tools)
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Data files (if you want to exclude large datasets)
+*.csv
+*.dat
+*.json
+!small_test_data.*
+
+# Configuration files with sensitive data
+config.ini
+secrets.txt
+.env
+
+# Additional ML library specific files
+*.model
+*.weights
+*.checkpoint
+*.pkl
+*.pickle
+
+# Performance and profiling files
+gmon.out
+callgrind.out.*
+massif.out.*
+*.gcda
+*.gcno
+*.gcov
+
+# Documentation build artifacts
+Doxyfile.bak
+docs/_build/
+sphinx_build/
+
+# Package manager files
+conan.lock
+vcpkg_installed/
+
+# Additional temporary files
+.cache/
+*.autosave

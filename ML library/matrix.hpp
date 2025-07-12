@@ -54,7 +54,7 @@ public:
     Matrix<T> reshape(const std::vector<size_t>& newShape) const;
     Matrix<T> transpose(const std::vector<size_t>& axes = {}) const;
     Matrix<T> slice(const std::vector<std::pair<size_t,size_t>>& ranges) const;
-    Matrix<T> rotate90(int k = 1) // k*90 degrees
+    Matrix<T> rotate90(int k = 1) const; // k*90 degrees
     Matrix<T> flip(bool horizontal = true) const;
 
 
@@ -121,7 +121,7 @@ public:
 
 
     // arrayy manupulation 
-    Matrix<T> concatenate(const Matrix<T>& A,size_t, axis) const;
+    Matrix<T> concatenate(const Matrix<T>& A,size_t axis) const;
     Matrix<T> stack(const Matrix<T>& A,size_t axis) const;
     std::vector<Matrix<T>> split(size_t sections, size_t axis) const;
     Matrix<T> swapaxes(size_t axis1,size_t axis2) const;
@@ -151,10 +151,10 @@ public:
     Matrix<T> covariance() const; // gives the variance co variance matrix
     T mean() const;
     T variance() const;
-    T median() const
+    T median() const;
     T standardDeviation() const;
     Matrix<T> mean(size_t axis) const;
-    Matrix<T> median(size_t axis ) const
+    Matrix<T> median(size_t axis ) const;
     Matrix<T> variance(size_t axis) const;
     Matrix<T> standardDeviation(size_t axis) const;
     Matrix<T> percentile(T p) const;

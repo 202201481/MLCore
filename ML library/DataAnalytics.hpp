@@ -80,8 +80,15 @@ public:
     void writeJSON(const std::string& filename) const;
 
     size_t rows() const {return num_rows;}
-    size_t cols() const {return column_names.size();}
-    std::vector<std::string> columns() const {return column_names;}
+    size_t cols() const {return next_index;}
+    std::vector<std::string> columns() const {
+        std::vector<std::string> result;
+        result.reserve(next_index);
+        for(size_t i = 0; i < next_index; i++) {
+            result.push_back(index_to_column.at(i));
+        }
+        return result;
+    }
     void info() const;
     std::string describe() const;
 
